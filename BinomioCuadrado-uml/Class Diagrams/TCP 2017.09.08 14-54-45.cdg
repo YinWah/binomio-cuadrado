@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="TCP">
+  <ClassDiagramComponents>
+    <Class name="Metodos" package="tcp" visibility="public" xPosition="507.0" yPosition="247.0">
+      <Fields>
+        <Field name="x" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getX" returnType="double" visibility="public"/>
+        <Method name="setX" returnType="void" visibility="public">
+          <Argument type="double" name="x"/>
+        </Method>
+        <Method name="getY" returnType="double" visibility="public"/>
+        <Method name="setY" returnType="void" visibility="public">
+          <Argument type="double" name="y"/>
+        </Method>
+        <Method name="getX2" returnType="double" visibility="public"/>
+        <Method name="setX2" returnType="void" visibility="public"/>
+        <Method name="getY2" returnType="double" visibility="public"/>
+        <Method name="setY2" returnType="void" visibility="public"/>
+        <Method name="getXy2" returnType="double" visibility="public"/>
+        <Method name="setXy2" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Stuff" package="tcp" visibility="public" xPosition="744.0" yPosition="247.0">
+      <Fields>
+        <Field name="x" type="JTextField" visibility="package"/>
+        <Field name="P1" type="JLabel" visibility="package"/>
+        <Field name="signo" type="JComboBox" visibility="package"/>
+        <Field name="calcular" type="JButton" visibility="package"/>
+        <Field name="a" type="double" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="iniciarVentana" returnType="void" visibility="public"/>
+        <Method name="iniciarComponentes" returnType="void" visibility="public"/>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TCP" package="tcp" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation name="" source="tcp.TCP" target="tcp.Metodos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="tcp.TCP" target="tcp.Stuff" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
